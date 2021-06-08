@@ -1,0 +1,20 @@
+C:\Users\Usuario\Desktop\Proyecto\ProyectoCF\CenterFlowers\bin\Debug\CenterFlowers.exe.config
+C:\Users\Usuario\Desktop\Proyecto\ProyectoCF\CenterFlowers\bin\Debug\CenterFlowers.exe
+C:\Users\Usuario\Desktop\Proyecto\ProyectoCF\CenterFlowers\bin\Debug\CenterFlowers.pdb
+C:\Users\Usuario\Desktop\Proyecto\ProyectoCF\CenterFlowers\obj\Debug\CenterFlowers.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\Proyecto\ProyectoCF\CenterFlowers\obj\Debug\CenterFlowers.frmLogin.resources
+C:\Users\Usuario\Desktop\Proyecto\ProyectoCF\CenterFlowers\obj\Debug\CenterFlowers.frmUsuario.resources
+C:\Users\Usuario\Desktop\Proyecto\ProyectoCF\CenterFlowers\obj\Debug\CenterFlowers.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Proyecto\ProyectoCF\CenterFlowers\obj\Debug\CenterFlowers.csproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\Proyecto\ProyectoCF\CenterFlowers\obj\Debug\CenterFlowers.exe
+C:\Users\Usuario\Desktop\Proyecto\ProyectoCF\CenterFlowers\obj\Debug\CenterFlowers.pdb
+C:\Users\Usuario\Desktop\Proyectos VS\ProyectoCF\CenterFlowers\bin\Debug\CenterFlowers.exe.config
+C:\Users\Usuario\Desktop\Proyectos VS\ProyectoCF\CenterFlowers\obj\Debug\CenterFlowers.exe
+C:\Users\Usuario\Desktop\Proyectos VS\ProyectoCF\CenterFlowers\obj\Debug\CenterFlowers.pdb
+C:\Users\Usuario\Desktop\Proyectos VS\ProyectoCF\CenterFlowers\bin\Debug\CenterFlowers.exe
+C:\Users\Usuario\Desktop\Proyectos VS\ProyectoCF\CenterFlowers\bin\Debug\CenterFlowers.pdb
+C:\Users\Usuario\Desktop\Proyectos VS\ProyectoCF\CenterFlowers\obj\Debug\CenterFlowers.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\Proyectos VS\ProyectoCF\CenterFlowers\obj\Debug\CenterFlowers.frmLogin.resources
+C:\Users\Usuario\Desktop\Proyectos VS\ProyectoCF\CenterFlowers\obj\Debug\CenterFlowers.frmUsuario.resources
+C:\Users\Usuario\Desktop\Proyectos VS\ProyectoCF\CenterFlowers\obj\Debug\CenterFlowers.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Proyectos VS\ProyectoCF\CenterFlowers\obj\Debug\CenterFlowers.csproj.GenerateResource.Cache
