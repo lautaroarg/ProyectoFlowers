@@ -30,7 +30,7 @@ namespace CenterFlowers
                 
                 MessageBox.Show("Ingreso correcto");
                 this.Hide();
-                frmUsuario ofrmUsuario = new frmUsuario();
+                frmUsuario ofrmUsuario = new frmUsuario();              
                 ofrmUsuario.Show();
                 // Si el ingreso es correcto, mostrar el menu dependiendo si es Administrador,Encargado o vendedor.
                 //Para eso tengo que comparar el DNI, del usuario que ingreso, con el ID_Perfil, y preguntar cual es el PERMISO.

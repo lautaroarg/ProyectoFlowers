@@ -64,17 +64,21 @@
             this.label16 = new System.Windows.Forms.Label();
             this.txtELaboral = new System.Windows.Forms.TextBox();
             this.txtEPersonal = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.btnBorrar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.cboEstado = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.btnSeleccionarUsuario = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 13);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 13);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(956, 413);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -103,7 +107,7 @@
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnAgregar.Location = new System.Drawing.Point(1092, 450);
+            this.btnAgregar.Location = new System.Drawing.Point(1078, 437);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(168, 41);
             this.btnAgregar.TabIndex = 3;
@@ -376,41 +380,57 @@
             this.txtEPersonal.Size = new System.Drawing.Size(148, 20);
             this.txtEPersonal.TabIndex = 32;
             // 
-            // label17
+            // btnModificar
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(746, 445);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(63, 13);
-            this.label17.TabIndex = 37;
-            this.label17.Text = "Descripcion";
+            this.btnModificar.BackColor = System.Drawing.Color.Gold;
+            this.btnModificar.Location = new System.Drawing.Point(1078, 511);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(168, 41);
+            this.btnModificar.TabIndex = 39;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
-            // txtDescripcion
+            // cboEstado
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(746, 461);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(113, 20);
-            this.txtDescripcion.TabIndex = 36;
+            this.cboEstado.FormattingEnabled = true;
+            this.cboEstado.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
+            this.cboEstado.Location = new System.Drawing.Point(584, 511);
+            this.cboEstado.Name = "cboEstado";
+            this.cboEstado.Size = new System.Drawing.Size(102, 21);
+            this.cboEstado.TabIndex = 42;
             // 
-            // btnBorrar
+            // label19
             // 
-            this.btnBorrar.BackColor = System.Drawing.Color.IndianRed;
-            this.btnBorrar.Location = new System.Drawing.Point(1092, 513);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(168, 41);
-            this.btnBorrar.TabIndex = 38;
-            this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.UseVisualStyleBackColor = false;
-            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(581, 498);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(40, 13);
+            this.label19.TabIndex = 43;
+            this.label19.Text = "Estado";
+            // 
+            // btnSeleccionarUsuario
+            // 
+            this.btnSeleccionarUsuario.BackColor = System.Drawing.Color.Bisque;
+            this.btnSeleccionarUsuario.Location = new System.Drawing.Point(1059, 95);
+            this.btnSeleccionarUsuario.Name = "btnSeleccionarUsuario";
+            this.btnSeleccionarUsuario.Size = new System.Drawing.Size(217, 49);
+            this.btnSeleccionarUsuario.TabIndex = 44;
+            this.btnSeleccionarUsuario.Text = "Seleccionar usuario";
+            this.btnSeleccionarUsuario.UseVisualStyleBackColor = false;
+            this.btnSeleccionarUsuario.Click += new System.EventHandler(this.btnSeleccionarUsuario_Click);
             // 
             // frmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1364, 702);
-            this.Controls.Add(this.btnBorrar);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.txtDescripcion);
+            this.Controls.Add(this.btnSeleccionarUsuario);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.cboEstado);
+            this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtELaboral);
@@ -494,8 +514,9 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtELaboral;
         private System.Windows.Forms.TextBox txtEPersonal;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.Button btnBorrar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.ComboBox cboEstado;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button btnSeleccionarUsuario;
     }
 }

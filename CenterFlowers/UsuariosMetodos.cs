@@ -13,7 +13,7 @@ namespace CenterFlowers
     {
         public DataTable Consultar()
         {
-            string Query = "Select Nombre,Apellido,usuario.ID_dni,Contraseña,Permiso,Tipo_Vendedor,Descripcion_perfil, Calle,Altura,Piso,Localidad,Provincia,Pais,Celular,Fijo,Laboral,Personal from Usuario,Perfil_usuario, domicilios,Telefonos,Emails where Usuario.ID_dni = Perfil_usuario.Id_perfil and Usuario.ID_dni= Domicilios.Id_dni and Usuario.ID_dni = Telefonos.ID_dni and Usuario.ID_dni = Emails.Id_dni_usuario ";
+            string Query = "Select Nombre,Apellido,usuario.ID_dni,Contraseña,Estado,Permiso,Tipo_Vendedor, Calle,Altura,Piso,Localidad,Provincia,Pais,Celular,Fijo,Laboral,Personal from Usuario,Perfil_usuario, domicilios,Telefonos,Emails where Usuario.ID_dni = Perfil_usuario.Id_perfil and Usuario.ID_dni= Domicilios.Id_dni and Usuario.ID_dni = Telefonos.ID_dni and Usuario.ID_dni = Emails.Id_dni_usuario ";
             var da = new SqlDataAdapter(Query, conectar()); //conectar es el metodo heredado de la clase conexion. Que ese metodo es para conectar la base.
             var ds = new DataSet();
             da.Fill(ds);                // llenar el dataset con lo que tiene el data adapter, que seria la consulta y la conexion.
